@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Александр Перетрухин — репетитор английского в Перми</title>
+<meta name="description" content="Репетитор английского в Перми. Разговорная речь, поставленное произношение, общий уровень языка. 5 лет репетиторства, преподаватель МАОУ «Лицей № 4».">
+<meta property="og:title" content="Александр Перетрухин — репетитор английского">
+<meta property="og:description" content="Занятия, на которых вы говорите по-английски. Разговорная речь и произношение.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f4fd1'/%3E%3Ctext x='16' y='22.5' font-family='Georgia,serif' font-size='18' fill='%23fff' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Lora:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4f6f9;
+    --surface: #ffffff;
+    --ink: #131a26;
+    --muted: #5b6577;
+    --line: #dce3ed;
+    --accent: #1f4fd1;
+    --accent-ink: #ffffff;
+    --accent-soft: #e4ebfb;
+    --radius: 14px;
+    --wrap: 1080px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1219;
+      --surface: #151b25;
+      --ink: #e8edf5;
+      --muted: #97a2b4;
+      --line: #242c3a;
+      --accent: #6b9bff;
+      --accent-ink: #0e1219;
+      --accent-soft: #19253f;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.6 "Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  a { color: inherit; }
+  h1, h2, h3 { margin: 0; font-weight: 600; line-height: 1.15; letter-spacing: -0.02em; }
+  p { margin: 0; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+  @media (max-width: 560px) { .wrap { padding: 0 16px; } }
+
+  /* Header */
+  .top {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 16px; }
+  .brand { font-weight: 600; text-decoration: none; white-space: nowrap; }
+  .top nav { display: flex; gap: 24px; font-size: 15px; color: var(--muted); }
+  .top nav a { text-decoration: none; }
+  .top nav a:hover { color: var(--ink); }
+  .top .phone-link { font-weight: 600; text-decoration: none; white-space: nowrap; }
+  @media (max-width: 760px) { .top nav { display: none; } }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 22px; border-radius: 999px;
+    font: inherit; font-weight: 600; font-size: 16px;
+    text-decoration: none; cursor: pointer; border: 1px solid transparent;
+    transition: transform .15s ease, background-color .15s ease;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary { background: var(--accent); color: var(--accent-ink); }
+  .btn-primary:hover { background: color-mix(in srgb, var(--accent) 88%, var(--ink)); }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+  .btn-ghost:hover { border-color: var(--muted); }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+
+  /* Hero */
+  .hero { padding: 72px 0 56px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.25fr 1fr; gap: 56px; align-items: center; }
+  .eyebrow { font-size: 14px; color: var(--muted); letter-spacing: .02em; margin-bottom: 18px; }
+  .hero h1 { font-size: clamp(38px, 6vw, 64px); }
+  .hero h1 em { font-family: "Lora", Georgia, serif; font-style: italic; font-weight: 500; color: var(--accent); }
+  .lead { font-size: clamp(18px, 2vw, 21px); color: var(--muted); margin-top: 22px; max-width: 34em; }
+  .lead strong { color: var(--ink); font-weight: 500; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+
+  .portrait { margin: 0; justify-self: end; width: 100%; max-width: 420px; }
+  .portrait img {
+    display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover;
+    border-radius: 20px; background: var(--line);
+  }
+
+  .words { border-top: 1px solid var(--line); padding-top: 4px; }
+  @media (min-width: 761px) { .words { border-top: 0; border-left: 1px solid var(--line); padding: 0 0 0 32px; } }
+  .words-title { font-size: 14px; color: var(--muted); margin: 12px 0 4px; }
+  .words ul { list-style: none; margin: 0; padding: 0; }
+  .words li {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+    padding: 14px 0; border-bottom: 1px solid var(--line);
+  }
+  .words li:last-child { border-bottom: 0; padding-bottom: 4px; }
+  .w { font-family: "Lora", Georgia, serif; font-size: 22px; }
+  .ipa { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 15px; color: var(--muted); }
+  .say {
+    margin-left: auto; flex: none; width: 32px; height: 32px; border-radius: 50%;
+    border: 1px solid var(--line); background: transparent; color: var(--muted);
+    display: inline-grid; place-items: center; cursor: pointer; padding: 0;
+    align-self: center;
+  }
+  .say:hover { color: var(--accent); border-color: var(--accent); }
+  .say svg { width: 14px; height: 14px; }
+  .no-tts .say { display: none; }
+
+  @media (max-width: 860px) {
+    .hero { padding: 48px 0 40px; }
+    .hero .wrap { gap: 32px; }
+  }
+  @media (max-width: 680px) {
+    .hero { padding: 20px 0 36px; }
+    .hero .wrap { grid-template-columns: 1fr; gap: 28px; }
+    .portrait { order: -1; max-width: none; }
+    .portrait img { aspect-ratio: 1 / 1; object-position: 50% 30%; }
+    .hero .cta .btn { flex: 1 1 auto; justify-content: center; }
+  }
+
+  /* Facts */
+  .facts { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); }
+  .facts .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .fact { padding: 28px 24px 28px 0; }
+  .fact + .fact { padding-left: 24px; border-left: 1px solid var(--line); }
+  .fact b { display: block; font-size: 34px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; }
+  .fact span { display: block; font-size: 15px; color: var(--muted); margin-top: 6px; }
+  @media (max-width: 760px) {
+    .facts .wrap { grid-template-columns: 1fr 1fr; }
+    .fact, .fact + .fact { padding: 22px 16px; border-left: 0; }
+    .fact:nth-child(odd) { padding-left: 0; }
+    .fact:nth-child(even) { border-left: 1px solid var(--line); }
+    .fact:nth-child(n+3) { border-top: 1px solid var(--line); }
+    .fact b { font-size: 28px; }
+  }
+
+  /* Sections */
+  section.block { padding: 88px 0; }
+  .section-head { display: grid; grid-template-columns: 1fr 1.6fr; gap: 56px; margin-bottom: 48px; align-items: end; }
+  .section-head h2 { font-size: clamp(30px, 4vw, 42px); }
+  .section-head p { color: var(--muted); font-size: 18px; }
+  @media (max-width: 860px) {
+    section.block { padding: 64px 0; }
+    .section-head { grid-template-columns: 1fr; gap: 16px; margin-bottom: 32px; }
+  }
+
+  /* Approach */
+  .approach { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card.wide { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 28px;
+  }
+  .card .num { font-family: "Lora", Georgia, serif; font-style: italic; color: var(--accent); font-size: 18px; }
+  .card h3 { font-size: 22px; margin: 10px 0 10px; }
+  .card p { color: var(--muted); }
+  .card.main { grid-column: 1 / -1; background: var(--accent-soft); border-color: transparent; }
+  .card.main p { color: var(--ink); font-size: 19px; max-width: 46em; }
+  @media (max-width: 860px) { .approach { grid-template-columns: 1fr; } }
+  @media (max-width: 760px) { .card.wide { grid-template-columns: 1fr; gap: 8px; } }
+  @media (max-width: 640px) { .card { padding: 22px; } }
+
+  /* Experience */
+  #experience { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .exp { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+  .exp h3 { font-size: 15px; font-weight: 500; color: var(--muted); letter-spacing: .02em; margin-bottom: 12px; }
+  .exp ul { list-style: none; margin: 0; padding: 0; }
+  .exp li {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+    padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 18px;
+  }
+  .exp li:first-child { border-top: 1px solid var(--line); }
+  .exp li span { color: var(--muted); font-size: 16px; white-space: nowrap; }
+  .exp p { font-size: 18px; padding: 16px 0; border-top: 1px solid var(--line); }
+  .exp p:last-child { border-bottom: 1px solid var(--line); }
+  @media (max-width: 860px) { .exp { grid-template-columns: 1fr; gap: 48px; } }
+  @media (max-width: 560px) {
+    .exp li { flex-direction: column; gap: 2px; font-size: 17px; }
+    .exp p { font-size: 17px; }
+  }
+
+  /* Contact */
+  .contact { text-align: center; }
+  .contact h2 { font-size: clamp(30px, 4vw, 42px); }
+  .contact p { color: var(--muted); font-size: 18px; margin: 16px auto 0; max-width: 30em; }
+  .big-phone {
+    display: inline-block; margin-top: 32px;
+    font-size: clamp(30px, 6vw, 52px); font-weight: 600; letter-spacing: -0.02em;
+    text-decoration: none; border-bottom: 3px solid var(--accent); line-height: 1.2;
+  }
+  .contact .cta { justify-content: center; }
+  .copied { font-size: 14px; color: var(--accent); height: 20px; margin-top: 10px; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0 96px; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  @media (min-width: 761px) { footer { padding-bottom: 28px; } }
+
+  /* Mobile sticky call */
+  .mobile-call {
+    position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 20;
+    justify-content: center; box-shadow: 0 6px 24px rgba(0,0,0,.18);
+    display: none;
+  }
+  @media (max-width: 760px) { .mobile-call { display: flex; } }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+</style>
+<script>
+  // Яндекс Метрика. Впишите номер счётчика — пока он 0, счётчик не грузится
+  var METRIKA_ID = 0;
+  function goal(name, params) {
+    if (METRIKA_ID && window.ym) ym(METRIKA_ID, "reachGoal", name, params);
+  }
+  if (METRIKA_ID) {
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(METRIKA_ID, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
+  }
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Александр Перетрухин</a>
+    <nav aria-label="Разделы">
+      <a href="#approach">Как проходят занятия</a>
+      <a href="#experience">Опыт</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <a class="phone-link" data-place="header" href="tel:+79027975314">+7 902 797-53-14</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Репетитор английского · Пермь</p>
+        <h1>Английский, на котором вы <em>говорите</em></h1>
+        <p class="lead">
+          Меня зовут Александр Перетрухин. На моих занятиях <strong>вы больше говорите, чем слушаете</strong>:
+          каждый урок — это беседа на английском по теме занятия. Параллельно ставим произношение
+          и подтягиваем общий уровень языка.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" data-place="hero" href="tel:+79027975314">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            Позвонить
+          </a>
+          <a class="btn btn-ghost" href="#approach">Как проходят занятия</a>
+        </div>
+      </div>
+
+      <figure class="portrait">
+        <picture>
+          <source srcset="img/alexander.webp" type="image/webp">
+          <img src="img/alexander.jpg" width="440" height="550" alt="Александр Перетрухин" fetchpriority="high">
+        </picture>
+      </figure>
+    </div>
+  </section>
+
+  <div class="facts">
+    <div class="wrap">
+      <div class="fact"><b>5 лет</b><span>частной практики репетитором</span></div>
+      <div class="fact"><b>3 года</b><span>в школе и языковом центре</span></div>
+      <div class="fact"><b>10+</b><span>выполненных письменных переводов</span></div>
+      <div class="fact"><b>2024</b><span>переводчик Евразийского форума по безопасности</span></div>
+    </div>
+  </div>
+
+  <section class="block" id="approach">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Как проходят занятия</h2>
+        <p>Урок строится вокруг живого разговора. Ученик не слушает лекцию, а включается в беседу на английском с первых минут.</p>
+      </div>
+      <div class="approach">
+        <div class="card main">
+          <span class="num">Главное</span>
+          <h3>Беседа по теме урока</h3>
+          <p>Каждое занятие посвящено конкретной теме, и почти всё время мы обсуждаем её на английском. Так новые слова и конструкции сразу идут в речь, а не остаются в тетради.</p>
+        </div>
+        <div class="card wide">
+          <div>
+            <span class="num">01</span>
+            <h3>Произношение</h3>
+            <p>Ставим звуки, ударения и интонацию, чтобы вас понимали с первого раза. Разбираемся прямо в разговоре, а не по таблицам.</p>
+          </div>
+          <div class="words" aria-label="Примеры слов с транскрипцией">
+            <p class="words-title">Слова, в которых чаще всего ошибаются</p>
+            <ul>
+              <li><span class="w">Wednesday</span><span class="ipa">/ˈwenzdeɪ/</span><button class="say" data-word="Wednesday" aria-label="Послушать: Wednesday"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button></li>
+              <li><span class="w">comfortable</span><span class="ipa">/ˈkʌmftəbl/</span><button class="say" data-word="comfortable" aria-label="Послушать: comfortable"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button></li>
+              <li><span class="w">thorough</span><span class="ipa">/ˈθʌrə/</span><button class="say" data-word="thorough" aria-label="Послушать: thorough"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button></li>
+              <li><span class="w">clothes</span><span class="ipa">/kləʊðz/</span><button class="say" data-word="clothes" aria-label="Послушать: clothes"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <span class="num">02</span>
+          <h3>Устная речь</h3>
+          <p>Учимся формулировать мысли сразу на английском, поддерживать разговор и не теряться, когда нужно ответить быстро.</p>
+        </div>
+        <div class="card">
+          <span class="num">03</span>
+          <h3>Общий уровень языка</h3>
+          <p>Грамматика, словарный запас и понимание на слух растут вместе с разговорными навыками, а не отдельно от них.</p>
+        </div>
+        <div class="card">
+          <span class="num">04</span>
+          <h3>Межкультурная коммуникация</h3>
+          <p>Разбираемся, как общаться с людьми из англоязычной среды: что уместно сказать, как звучать вежливо и естественно.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Опыт</h2>
+      </div>
+      <div class="exp">
+        <div>
+          <h3>Преподаю</h3>
+          <ul>
+            <li>МАОУ «Лицей № 4», Пермь <span>1 год, продолжаю</span></li>
+            <li>Частные ученики <span>5 лет, продолжаю</span></li>
+            <li>Языковой центр «English club», Пермь <span>2 года</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Перевожу</h3>
+          <p>В 2024 году был одним из организаторов и переводчиков Евразийского форума по безопасности в Перми. Все дни форума переводил для заместителя министра здравоохранения Пермского края.</p>
+          <p>Выполнил больше десятка заказов на письменный перевод.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block contact" id="contact">
+    <div class="wrap">
+      <h2>Записаться на занятие</h2>
+      <p>Позвоните — обсудим ваши цели, текущий уровень и удобное время для занятий.</p>
+      <a class="big-phone" data-place="contact_number" href="tel:+79027975314">+7 902 797-53-14</a>
+      <div class="cta">
+        <a class="btn btn-primary" data-place="contact_button" href="tel:+79027975314">Позвонить</a>
+        <button class="btn btn-ghost" type="button" id="copy">Скопировать номер</button>
+      </div>
+      <p class="copied" id="copied" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Александр Перетрухин, репетитор английского языка</span>
+    <span>Пермь</span>
+  </div>
+</footer>
+
+<a class="btn btn-primary mobile-call" data-place="sticky_mobile" href="tel:+79027975314">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+  Позвонить: +7 902 797-53-14
+</a>
+
+<script>
+  // Озвучка слов через Web Speech API; если браузер не умеет — кнопки скрываются
+  (function () {
+    var synth = window.speechSynthesis;
+    if (!synth || typeof SpeechSynthesisUtterance === "undefined") {
+      document.documentElement.classList.add("no-tts");
+      return;
+    }
+    function pickVoice() {
+      var voices = synth.getVoices();
+      return voices.find(function (v) { return v.lang === "en-GB"; })
+          || voices.find(function (v) { return /^en/.test(v.lang); });
+    }
+    document.querySelectorAll(".say").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var u = new SpeechSynthesisUtterance(btn.dataset.word);
+        var voice = pickVoice();
+        if (voice) u.voice = voice;
+        u.lang = voice ? voice.lang : "en-GB";
+        u.rate = 0.85;
+        synth.cancel();
+        synth.speak(u);
+        goal("word_play", { word: btn.dataset.word });
+      });
+    });
+  })();
+
+  document.getElementById("copy").addEventListener("click", function () {
+    var out = document.getElementById("copied");
+    var number = "+7 902 797-53-14";
+    goal("copy_phone");
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(number).then(
+        function () { out.textContent = "Номер скопирован"; },
+        function () { out.textContent = number; }
+      );
+    } else {
+      out.textContent = number;
+    }
+  });
+
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
+    a.addEventListener("click", function () { goal("call_click", { place: a.dataset.place }); });
+  });
+</script>
+</body>
+</html>
